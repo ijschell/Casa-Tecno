@@ -1,0 +1,1 @@
+<form method="get" class="searchform" action="<?php echo esc_url(home_url( '/' )); ?>">	<p>		<input type="text" class="search-field" placeholder="<?php esc_html_e( 'Enter your keywords...', 'smarket' ); ?>" name="s" />	</p>	<button class="button"><?php esc_html_e('Search','smarket');?></button></form>
