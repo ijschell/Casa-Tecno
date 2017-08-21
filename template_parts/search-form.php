@@ -19,8 +19,6 @@ $args = array(
     'selected'          => $selected,
     'option_none_value' => '0',
 );
-var_dump($args);
-var_dump(wp_dropdown_categories($args));
 
 if( in_array($smarket_used_header,array())){
 
