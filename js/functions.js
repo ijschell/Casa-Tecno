@@ -1225,12 +1225,16 @@
             $(this).addClass('open-cate').removeClass('close-cate').html(alltext);
             return false;
         });
+        
+        // $(".block-nav-categori .block-title").on('click', function () {
+        //     $(this).toggleClass('active');
+        //     $(this).parent().toggleClass('has-open');
+        //     $("body").toggleClass("categori-open");
+        // });
 
-        $(".block-nav-categori .block-title").on('click', function () {
-            $(this).toggleClass('active');
-            $(this).parent().toggleClass('has-open');
-            $("body").toggleClass("categori-open");
-        });
+        $(document).ready(function(){
+          $("body").addClass("categori-open");
+        })
 
         if ( $('.categori-search-option').length > 0 ) {
             $('.categori-search-option').chosen();

@@ -42,34 +42,42 @@ if ( $opt_enable_vertical_menu == 1 ) {
 	?>
     <!-- block categori -->
     <div data-items="<?php echo esc_attr( $opt_vertical_item_visible ); ?>"
-         class="<?php echo esc_attr( implode( ' ', $block_vertical_class ) ); ?>">
-        <div class="block-title">
+         class="<?php echo esc_attr( implode( ' ', $block_vertical_class ) ); ?> has-open">
+        <div class="block-title active">
 			<span class="icon-bar">
 				<i class="fa fa-align-justify" aria-hidden="true"></i>
 			</span>
             <span class="text"><?php echo esc_html( $opt_vertical_menu_title ); ?></span>
         </div>
         <div class="block-content verticalmenu-content">
-			<?php
-			wp_nav_menu( array(
-					'menu'            => 'vertical_menu',
-					'theme_location'  => 'vertical_menu',
-					'depth'           => 4,
-					'container'       => '',
-					'container_class' => '',
-					'container_id'    => '',
-					'menu_class'      => 'smarket-nav vertical-menu',
-					'fallback_cb'     => 'Smarket_navwalker::fallback',
-					'walker'          => new Smarket_navwalker(),
-				)
-			);
-			?>
-            <div class="view-all-categori">
-                <a href="#"
-                   data-closetext="<?php echo esc_attr( $opt_vertical_menu_button_close_text ); ?>"
-                   data-alltext="<?php echo esc_attr( $opt_vertical_menu_button_all_text ) ?>"
-                   class="btn-view-all open-cate"><?php echo esc_html( $opt_vertical_menu_button_all_text ) ?></a>
-            </div>
+					<ul>
+						<?php
+						$categories_prods = get_terms('product_cat');
+						foreach ($categories_prods as $key => $value) {
+							// var_dump($value);
+							$thumbnail_id = get_woocommerce_term_meta( $value->term_taxonomy_id, 'thumbnail_id', true );
+							if ( $thumbnail_id ) {
+								$image = wp_get_attachment_thumb_url( $thumbnail_id );
+							} else {
+								$image = false;
+							}
+							$name = $value->name;
+							$slug = $value->slug;
+							?>
+							<li>
+									<a href="<?php echo $slug; ?>" class="btn-view-all open-cate">
+										<?php
+										if($image != false){
+											echo '<span style="background-image: url('.$image.')"></span>';
+										}
+										?>
+										<i><?php echo $name; ?></i>
+									</a>
+							</li>
+						<?php
+						}
+						?>
+					</ul>
         </div>
     </div><!-- block categori -->
 <?php endif; ?>

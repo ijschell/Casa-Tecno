@@ -1,1 +1,91 @@
 /* custom css */
+/*vertical menu*/
+body{
+  font-family: 'Montserrat-regular';
+}
+.verticalmenu-content ul{
+  margin: 0;
+  padding: 0;
+}
+.verticalmenu-content ul li{
+  list-style: none;
+}
+.verticalmenu-content ul li a{
+  display: block;
+  padding: 8px 8px 8px 15px;
+  line-height: 23px;
+  border-bottom: solid 1px #f7f7f7;
+  color: #000;
+}
+.verticalmenu-content ul li:last-child a{
+  border-bottom: none;
+}
+.verticalmenu-content ul li a span{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 4px;
+  margin-right: 5px;
+}
+.verticalmenu-content ul li a i{
+  font-style: normal;
+  position: relative;
+  top: -4px;
+}
+.block-nav-categori .block-title{
+  cursor: default;
+}
+.block-nav-categori .verticalmenu-content{
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  margin-top: 20px;
+  border: solid 2px #f7f7f7;
+}
+
+.slider-home .widget_home_slider{
+  float: left;
+  width: calc(100% - 270px);
+}
+.slider-home .content-images-home{
+  float: right;
+}
+.slider-home .content-images-home li{
+  list-style: none;
+  width: 250px;
+  margin-bottom: 28px;
+}
+.slider-home .content-images-home li:last-child{
+  margin-bottom: 0;
+}
+.slider-home .content-images-home li img{
+  width: 100%;
+  height: 164px !important;
+}
+div.custom-title h2{
+  color: #fff;
+  font-family: 'Montserrat-regular';
+  font-size: 20px;
+  background: #fec524;
+  text-transform: uppercase;
+  display: table;
+  float: left;
+  padding: 10px 20px;
+  margin: 70px 0 0 0;
+}
+div.custom-title span{
+  width: 100%;
+  height: 1px;
+  background: #ececec;
+  display: block;
+  clear: both;
+  position: relative;
+  top: -1px;
+}
