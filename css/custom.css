@@ -3,7 +3,7 @@
 body{
   font-family: 'Montserrat-regular';
 }
-.verticalmenu-content ul{
+/*.verticalmenu-content ul{
   margin: 0;
   padding: 0;
 }
@@ -48,7 +48,7 @@ body{
   transform: translateY(0);
   margin-top: 20px;
   border: solid 2px #f7f7f7;
-}
+}*/
 
 .slider-home .widget_home_slider{
   float: left;
@@ -88,4 +88,16 @@ div.custom-title span{
   clear: both;
   position: relative;
   top: -1px;
+}
+div.custom-title p.descuento-txt{
+  font-family: 'Montserrat-regular';
+  font-size: 20px;
+  color: #666666;
+  text-transform: uppercase;
+  position: relative;
+  top: -35px;
+  left: 182px;
+}
+.menu-item a img{
+  width: 32px;
 }

@@ -1,0 +1,34 @@
+footer{
+  border-top: solid 1px #eeeeee;
+  margin-top: 60px;
+}
+footer div.footer-top{
+  padding: 62px 0;
+}
+footer div.footer-top > div{
+  margin: auto;
+  display: table;
+}
+footer div.footer-top > div > div{
+  display: inline-block;
+  margin: 0 25px;
+}
+footer div.footer-top > div > div img, footer div.footer-top > div > div p{
+  display: inline-block;
+}
+footer div.footer-top > div > div img{
+  margin-right: 5px;
+}
+footer div.footer-top > div > div p{
+    color: #999999;
+    font-size: 23px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    bottom: -8px;
+}
+footer div.footer-bottom{
+  background: #f8f8f8;
+  padding: 70px 0;
+}

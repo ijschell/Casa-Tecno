@@ -53,4 +53,5 @@ if ( $smarket_blog_layout != 'full' ) {
 				</div>
     </div>
 </div>
+</div>
 <?php get_footer(); ?>
