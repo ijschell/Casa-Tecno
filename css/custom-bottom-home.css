@@ -12,6 +12,13 @@ div.custom-bottom-home div.slider-products-home-bottom div div.image{
   position: relative;
   margin-bottom: 10px;
 }
+div.custom-bottom-home div.slider-products-home-bottom div div.image a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 div.custom-bottom-home div.slider-products-home-bottom div div.image::before{
   content: '';
   display: block;

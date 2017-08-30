@@ -32,3 +32,98 @@ footer div.footer-bottom{
   background: #f8f8f8;
   padding: 70px 0;
 }
+footer div.footer-bottom h2{
+  color: #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+}
+footer div.footer-bottom ul{
+  padding: 0;
+  margin: 0;
+}
+footer div.footer-bottom ul li{
+  list-style: none;
+  margin-bottom: 20px;
+}
+footer div.footer-bottom ul li:last-child{
+  margin-bottom: 0;
+}
+footer div.footer-bottom ul li a{
+  display: block;
+}
+footer div.footer-bottom ul li a, footer div.footer-bottom ul li, footer div.footer-bottom p{
+  color: #212121;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+footer div.footer-bottom p{
+  font-size: 15px;
+}
+footer div.footer-bottom ul li.ubicacion{
+  list-style-image: url('../images/ubicacion.png');
+}
+footer div.footer-bottom ul li.telefono{
+  list-style-image: url('../images/telefono.png');
+}
+footer div.footer-bottom ul li.mail{
+  list-style-image: url('../images/mail.png');
+}
+footer div.footer-bottom ul li.horarios{
+  list-style-image: url('../images/horarios.png');
+}
+footer div.footer-bottom form.es_shortcode_form .es_lablebox{
+  display: none;
+}
+footer div.footer-bottom form.es_shortcode_form .es_textbox{
+  width: 80%;
+  float: left;
+}
+footer div.footer-bottom form.es_shortcode_form .es_textbox input{
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #605f5f;
+}
+footer div.footer-bottom form.es_shortcode_form .es_button{
+  width: 20%;
+  float: left;
+  padding: 0;
+}
+footer div.footer-bottom form.es_shortcode_form .es_button input{
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  background-color: #fec524;
+  background-image: url('../images/arrow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  margin-bottom: 44px;
+}
+footer div.footer-bottom a.facebook{
+  display: block;
+  width: 33px;
+  height: 34px;
+  background-position: center;
+  background-image: url('../images/facebook-logo.png');
+  background-size: cover;
+}
+footer div.footer-under{
+  border-top: solid 2px #f4f4f4;
+  background: #fff;
+}
+footer div.footer-under p{
+  text-align: center;
+  color: #8e8e8e;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 50px;
+  margin: 0;
+}
+footer div.footer-under p span{
+  color: #fec524;
+}

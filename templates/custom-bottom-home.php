@@ -25,7 +25,7 @@
           $down_price = $prod->get_price();
           echo '<div>';
           ?>
-          <div class="image" style="background-image: url('<?php echo $image ?>')"></div>
+          <div class="image" style="background-image: url('<?php echo $image ?>')"><a href="<?php echo $url ?>"></a></div>
           <h3><a href="<?php echo $url ?>"><?php echo cut_string($value->post_title, 26) ?></a></h3>
           <p class="price">
 

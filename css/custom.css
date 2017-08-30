@@ -101,3 +101,53 @@ div.custom-title p.descuento-txt{
 .menu-item a img{
   width: 32px;
 }
+.entry-summary .product_title{
+  color: #585959;
+  font-family: 'Montserrat-bold';
+  font-size: 25px;
+  line-height: 28px;
+}
+.price ins{
+  color: #ffc627;
+}
+.btn-consultar{
+  background-color: #fec524;
+  line-height: 45px;
+  color: #fff;
+  padding: 0 20px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  display: table;
+  margin-bottom: 28px;
+}
+.btn-consultar:focus{
+  color: #fff;
+}
+.btn-consultar:hover{
+  color: #fff;
+}
+.smarket-single-product-socials{
+  display: inline-block;
+}
+.link-send-mail{
+  display: inline-block;
+  color: #4f5051;
+  font-size: 12px;
+  font-family: 'Montserrat-regular';
+  position: relative;
+  top: -6px;
+  margin-left: 10px;
+}
+.product_title a{
+  color: #393939;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+.product-item .product-thumb{
+  height: 200px;
+}
+.entry-summary .block-stock .title{
+  color: #4f5051;
+}
