@@ -151,3 +151,60 @@ div.custom-title p.descuento-txt{
 .entry-summary .block-stock .title{
   color: #4f5051;
 }
+.widget_marcas_widget ul li a, .sidebar .widget_product_categories .cat-item a{
+  text-transform: uppercase;
+  font-family: 'Montserrat-regular';
+  color: #000;
+  font-weight: normal;
+}
+.toolbar-products{
+  width: 100%;
+}
+.toolbar-products .pagination-top{
+  float: right;
+}
+.nosotros .image{
+  background-position: center;
+  background-size: cover;
+  height: 325px;
+  margin-bottom: 30px;
+}
+.nosotros h2{
+  color: #ffc627;
+  font-family: 'Montserrat-regular';
+  font-weight: bold;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.nosotros p{
+  color: #141414;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 26px;
+}
+.nosotros .foot{
+  text-align: center;
+}
+.nosotros .foot .image{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 75px;
+  margin: 50px auto 30px auto;
+}
+.nosotros .foot h2{
+  color: #ffc627;
+  font-family: 'Montserrat-regular';
+  font-weight: bold;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.nosotros .foot p{
+  color: #141414;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 26px;
+}

@@ -37,7 +37,7 @@ if ( $smarket_blog_layout != 'full' ) {
         <div class="row">
             <div class="<?php echo esc_attr( implode( ' ', $smarket_main_content_class ) ); ?>">
                 <!-- Main content -->
-				<?php get_template_part( 'templates/blogs/blog', 'list' ); ?>
+				<?php get_template_part( 'templates/blogs/custom', 'home' ); ?>
                 <!-- ./Main content -->
             </div>
 			<?php if ( $smarket_blog_layout != "full" ): ?>
@@ -46,7 +46,12 @@ if ( $smarket_blog_layout != 'full' ) {
                 </div>
 			<?php endif; ?>
         </div>
+				<div style="clear: both;">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<?php include get_template_directory(). '/templates/custom-bottom-home.php' ?>
+					</div>
+				</div>
     </div>
 </div>
+</div>
 <?php get_footer(); ?>
-

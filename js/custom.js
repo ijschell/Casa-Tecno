@@ -2,6 +2,7 @@ jQuery(document).ready(function(){
   addButtonConsultar();
   appendLinkSendByMail();
   languageStock();
+  changeReadMoreBtnBlog();
 })
 
 function addButtonConsultar(){
@@ -16,4 +17,10 @@ function appendLinkSendByMail(){
 
 function languageStock(){
   jQuery('.entry-summary .block-stock .title').text('ESTADO: ');
+}
+
+function changeReadMoreBtnBlog(){
+  if(jQuery('body').hasClass('blog')){
+    jQuery('.post-item .post-item-info .button .text').text('Leer más');
+  }
 }

@@ -23,7 +23,7 @@ if ( $opt_enable_vertical_menu == 1 ) {
 ?>
 
 <header id="header" class="header style1">
-    <div class="top-header">
+    <!-- <div class="top-header">
         <div class="container-wapper">
             <ul class="smarket-nav top-bar-menu left">
 				<?php get_template_part( 'template_parts/header', 'language' ); ?>
@@ -57,7 +57,7 @@ if ( $opt_enable_vertical_menu == 1 ) {
 			);
 			?>
         </div>
-    </div>
+    </div> -->
     <div class="main-header">
         <div class="container-wapper">
             <div class="header-content">

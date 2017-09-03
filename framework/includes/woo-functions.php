@@ -302,7 +302,8 @@ if ( !function_exists( 'smarket_shop_post_perpage' ) ) {
 			$perpage = $_SESSION[ 'smarket_woo_products_perpage' ];
 		}
 		?>
-        <span class="title-control"><?php echo esc_html__( 'show:', 'smarket' ) ?></span>
+        <span class="title-control"><?php echo esc_html__( 'Ver:', 'smarket' ) ?></span>
+				<!-- <span class="title-control">Ver</span> -->
         <select name="perpage" class="option-perpage">
             <option value="4" <?php if ( $perpage == 4 ) {
 				echo 'selected';
