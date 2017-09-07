@@ -21,7 +21,7 @@ if ( $opt_enable_vertical_menu == 1 ) {
 ?>
 <?php if ( $opt_enable_vertical_menu == '1' ): ?>
 	<?php
-	$block_vertical_class = array( 'vertical-wapper block-nav-categori' );
+	$block_vertical_class = array( 'vertical-wapper block-nav-categori has-open' );
 	if ( ( $opt_click_open_vertical_menu == '0' ) && ( is_front_page() || ( isset( $_GET[ 'smarket_is_home' ] ) && $_GET[ 'smarket_is_home' ] == 'true' ) ) || smarket_check_demo_is_homepage() ) {
 		$block_vertical_class[] = 'open-on-home is-home always-open';
 	}

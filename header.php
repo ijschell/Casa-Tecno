@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/custom-footer.css">
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> data-url="<?php echo get_site_url();?>/">
 	<?php get_template_part('template_parts/popup','content');?>
     <div class="body-overlay"></div>
 	<div id="box-mobile-menu" class="box-mobile-menu full-height">

@@ -46,7 +46,7 @@ if ( $smarket_blog_layout != 'full' ) {
             </div>
 			<?php if ( $smarket_blog_layout != "full" ): ?>
                 <div class="<?php echo esc_attr( implode( ' ', $smarket_slidebar_class ) ); ?>">
-					<?php get_sidebar(); ?>
+					<?php dynamic_sidebar( 'home-sidebar' ); ?>
                 </div>
 			<?php endif; ?>
         </div>

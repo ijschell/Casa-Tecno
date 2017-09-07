@@ -34,6 +34,15 @@ if ( $smarket_blog_layout != 'full' ) {
 <div class="<?php echo esc_attr( implode( ' ', $smarket_main_container_class ) ); ?>">
     <?php get_template_part( 'template_parts/part', 'breadcrumb' ); ?>
     <div class="container-wapper">
+			<?php
+			// pregunto si es blog
+			if(is_home()){
+				dynamic_sidebar( 'blog-top-rea' );
+			}
+			?>
+		</div>
+		<hr style="margin: 27px 0 40px 0">
+		<div class="container-wapper">
         <div class="row">
             <div class="<?php echo esc_attr( implode( ' ', $smarket_main_content_class ) ); ?>">
                 <!-- Main content -->
@@ -49,4 +58,3 @@ if ( $smarket_blog_layout != 'full' ) {
     </div>
 </div>
 <?php get_footer(); ?>
-

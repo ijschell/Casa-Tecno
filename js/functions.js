@@ -1225,7 +1225,7 @@
             $(this).addClass('open-cate').removeClass('close-cate').html(alltext);
             return false;
         });
-        
+
         // $(".block-nav-categori .block-title").on('click', function () {
         //     $(this).toggleClass('active');
         //     $(this).parent().toggleClass('has-open');

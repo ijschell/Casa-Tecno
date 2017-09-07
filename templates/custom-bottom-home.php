@@ -100,7 +100,7 @@
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <h3><?php echo $page1->post_title ?></h3>
             <p><?php echo cut_string($page1->post_content, 230); ?></p>
-            <a href="<?php echo $page1->guid ?>">VER MÁS</a>
+            <a href="nosotros">VER MÁS</a>
           </div>
         </div>
       </div>
@@ -117,7 +117,7 @@
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <h3><?php echo $page1->post_title ?></h3>
             <p><?php echo cut_string($page1->post_content, 230); ?></p>
-            <a href="<?php echo $page1->guid ?>">VER MÁS</a>
+            <a href="nosotros">VER MÁS</a>
           </div>
         </div>
       </div>

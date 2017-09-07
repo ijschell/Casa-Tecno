@@ -25,24 +25,3 @@ function create_product_taxonomies(){
 	);
   register_taxonomy( 'marca', array( 'product' ), $args );
 }
-/*
-// Our custom post type function
-function blog_post_type() {
-
-    register_post_type( 'blog',
-    // CPT Options
-        array(
-            'labels' => array(
-                'name' => __( 'Blog' ),
-                'singular_name' => __( 'Blog Post' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'blog'),
-            'supports' => array( 'title', 'editor', 'author', 'thumbnail'),
-        )
-    );
-}
-// Hooking up our function to theme setup
-add_action( 'init', 'blog_post_type' );
-*/

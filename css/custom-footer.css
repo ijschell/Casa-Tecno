@@ -21,7 +21,7 @@ footer div.footer-top > div > div img{
 }
 footer div.footer-top > div > div p{
     color: #999999;
-    font-size: 23px;
+    font-size: 18px;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     margin: 0;
@@ -62,17 +62,30 @@ footer div.footer-bottom ul li a, footer div.footer-bottom ul li, footer div.foo
 footer div.footer-bottom p{
   font-size: 15px;
 }
+footer div.footer-bottom ul.info{
+  margin-left: -15px;
+}
+footer div.footer-bottom ul.info li{
+  background-position: 0 1px;
+  background-size: 12px 16px;
+  background-repeat: no-repeat;
+  padding-left: 17px;
+}
+footer div.footer-bottom ul.info li span{
+  position: relative;
+  top: -3px;
+}
 footer div.footer-bottom ul li.ubicacion{
-  list-style-image: url('../images/ubicacion.png');
+  background-image: url('../images/icos/ubicacion.svg');
 }
 footer div.footer-bottom ul li.telefono{
-  list-style-image: url('../images/telefono.png');
+  background-image: url('../images/icos/telefono.svg');
 }
 footer div.footer-bottom ul li.mail{
-  list-style-image: url('../images/mail.png');
+  background-image: url('../images/icos/mail.svg');
 }
 footer div.footer-bottom ul li.horarios{
-  list-style-image: url('../images/horarios.png');
+  background-image: url('../images/icos/horarios.svg');
 }
 footer div.footer-bottom form.es_shortcode_form .es_lablebox{
   display: none;
@@ -97,7 +110,8 @@ footer div.footer-bottom form.es_shortcode_form .es_button input{
   height: 40px;
   padding: 0;
   background-color: #fec524;
-  background-image: url('../images/arrow.png');
+  background-image: url('../images/arrow.svg');
+  background-size: 25px;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
@@ -108,7 +122,7 @@ footer div.footer-bottom a.facebook{
   width: 33px;
   height: 34px;
   background-position: center;
-  background-image: url('../images/facebook-logo.png');
+  background-image: url('../images/logo-facebook.svg');
   background-size: cover;
 }
 footer div.footer-under{

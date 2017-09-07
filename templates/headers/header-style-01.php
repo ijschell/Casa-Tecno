@@ -2,6 +2,8 @@
 /*
  Name:  Header style 01
  */
+ //Poner en true si tiene carrito de compras
+ $carrito = false;
 ?>
 <?php
 $opt_enable_vertical_menu = smarket_option( 'opt_enable_vertical_menu', '1' );
@@ -72,6 +74,7 @@ if ( $opt_enable_vertical_menu == 1 ) {
 					$opt_enable_wishlist_link = smarket_option( 'opt_enable_wishlist_link', '1' );
 					?>
                     <a href="#" class="search-icon-mobile"><?php esc_html_e( 'Serach', 'smarket' ); ?></a>
+										<?php if($carrito == true){?>
 					<?php if ( defined( 'YITH_WCWL' ) && $opt_enable_wishlist_link ) : ?>
 						<?php
 						$yith_wcwl_wishlist_page_id = get_option( 'yith_wcwl_wishlist_page_id' );
@@ -90,6 +93,16 @@ if ( $opt_enable_vertical_menu == 1 ) {
                         <span class="icon"><span></span><span></span><span></span></span>
                         <span class="text"><?php esc_html_e( 'MAIN MENU', 'smarket' ); ?></span>
                     </a>
+									<?php }else{
+										?>
+										<div class="header-custom-icons">
+											<a href="#" class="facebook"></a>
+											<a href="#" class="mail"></a>
+											<a href="#" class="phone"></a>
+											<a href="#" class="location"></a>
+										</div>
+										<?php
+									}?>
                 </div>
             </div>
         </div>
