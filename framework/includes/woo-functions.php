@@ -76,13 +76,13 @@ if ( !function_exists( 'get_product_stock' ) ) {
 		global $product;
 		if ( $product->is_in_stock() ) {
 			echo '<div class="block-stock">';
-			echo '<span class="title">' . esc_html__( 'availability: ', 'smarket' ) . '</span>';
-			echo '<span class="stock">' . esc_html__( 'in stock', 'smarket' ) . '</span>';
+			echo '<span class="title">' . esc_html__( 'ESTADO: ', 'smarket' ) . '</span>';
+			echo '<span class="stock">' . esc_html__( 'DISPONIBLE', 'smarket' ) . '</span>';
 			echo '</div>';
 		} else {
 			echo '<div class="block-stock">';
-			echo '<span class="title">' . esc_html__( 'availability: ', 'smarket' ) . '</span>';
-			echo '<span class="stock">' . esc_html__( 'out stock', 'smarket' ) . '</span>';
+			echo '<span class="title">' . esc_html__( 'ESTADO: ', 'smarket' ) . '</span>';
+			echo '<span class="stock">' . esc_html__( 'NO DISPONIBLE', 'smarket' ) . '</span>';
 			echo '</div>';
 		}
 	}

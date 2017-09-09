@@ -17,7 +17,7 @@ function appendLinkSendByMail(){
 }
 
 function languageStock(){
-  jQuery('.entry-summary .block-stock .title').text('ESTADO: ');
+  // jQuery('.entry-summary .block-stock .title').text('ESTADO: ');
 }
 
 function changeReadMoreBtnBlog(){

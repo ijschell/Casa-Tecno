@@ -157,6 +157,10 @@ div.custom-title p.descuento-txt{
   font-family: 'Montserrat-regular';
   color: #000;
   font-weight: normal;
+  display: block;
+}
+.widget_marcas_widget ul li a:hover{
+  color: #fec524 !important;
 }
 .toolbar-products{
   width: 100%;
@@ -392,4 +396,7 @@ body.error-404 footer div.footer-top{
 }
 .header-content .logo img{
   width: 250px;
+}
+.content-brand img{
+  height: 20px;
 }

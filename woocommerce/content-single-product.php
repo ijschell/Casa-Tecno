@@ -73,6 +73,12 @@ if ( post_password_required() ) {
                  */
                 do_action( 'woocommerce_single_product_summary' );
                 ?>
+								<div class="content-brand">
+									<?php
+									$brand = get_field('marca', get_the_ID());
+									?>
+									<img src="<?php echo get_the_post_thumbnail_url($brand->ID);?>" alt="<?php echo $brand->post_title?>">
+								</div>
             </div>
         </div>
     </div><!-- #product-<?php the_ID(); ?> -->

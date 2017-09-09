@@ -55,15 +55,49 @@
           arrows: true,
           autoplay: true,
           autoplaySpeed: 3000,
-          cssEase: 'ease'
+          cssEase: 'ease',
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+          ]
         });
       })
     </script>
 
     <!-- carrouser de marcas -->
+    <?php
+    $marcas = get_posts(array(
+      'post_type' => 'marcas',
+      'posts_per_page' => -1
+    ));
+    // var_dump($marcas);
+    // dynamic_sidebar( 'marcas' );
+    ?>
     <div class="slider-marcas-home-bottom">
       <?php
-      dynamic_sidebar( 'marcas' );
+      if(!empty($marcas)){
+        foreach ($marcas as $key => $value) {
+          ?>
+            <li><a href="<?php echo get_site_url()?>/marcas/<?php echo $value->post_name?>"><img src="<?php echo get_the_post_thumbnail_url($value->ID);?>" alt=""></a></li>
+          <?php
+        }
+      }
       ?>
     </div>
     <script type="text/javascript">
@@ -76,7 +110,27 @@
           arrows: true,
           autoplay: true,
           autoplaySpeed: 1000,
-          cssEase: 'ease'
+          cssEase: 'ease',
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+          ]
         });
       })
     </script>
