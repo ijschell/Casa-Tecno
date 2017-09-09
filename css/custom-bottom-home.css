@@ -95,12 +95,22 @@ div.custom-bottom-home div.slider-products-home-bottom div p.price span.real_pri
   border-left: none;
   transform: rotate(-45deg);
 }
-.slick-slider .slick-slide img{
+.custom-bottom-home .slick-slider .slick-slide img{
   border: none;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 60%;
+}
+.custom-bottom-home .slick-slider .slick-slide.general-electric img{
+  width: 32%;
+}
+.custom-bottom-home .slick-slider .slick-slide.lg img{
+  width: 50%;
+}
+.custom-bottom-home .slick-slider .slick-slide.pioneer img{
+  width: 70%;
 }
 .slider-marcas-home-bottom{
   clear: both;

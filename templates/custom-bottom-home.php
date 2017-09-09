@@ -94,7 +94,7 @@
       if(!empty($marcas)){
         foreach ($marcas as $key => $value) {
           ?>
-            <li><a href="<?php echo get_site_url()?>/marcas/<?php echo $value->post_name?>"><img src="<?php echo get_the_post_thumbnail_url($value->ID);?>" alt=""></a></li>
+            <li class="<?php echo $value->post_name?>"><a href="<?php echo get_site_url()?>/marcas/<?php echo $value->post_name?>"><img src="<?php echo get_the_post_thumbnail_url($value->ID);?>" alt=""></a></li>
           <?php
         }
       }
