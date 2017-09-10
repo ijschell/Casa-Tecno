@@ -400,3 +400,31 @@ body.error-404 footer div.footer-top{
 .content-brand img{
   height: 20px;
 }
+.wpcf7-form .push-left{
+  float: left;
+  width: calc(50% - 15px);
+}
+.wpcf7-form .push-right{
+  float: right;
+  width: calc(50% - 15px);
+}
+.wpcf7-form label{
+  width: 100%;
+}
+.wpcf7-form-control-wrap{
+  display: block;
+}
+input[type="text"], input[type="email"], textarea, select, input[type="password"], input[type="tel"], input[type="search"]{
+  width: 100%;
+}
+.wpcf7-form-control-wrap input[type="text"], .wpcf7-form-control-wrap input[type="email"]{
+  height: 50px;
+}
+.wpcf7-response-output{
+  clear: both;
+  position: relative;
+  top: 24px;
+}
+.required-span{
+  color: red;
+}
