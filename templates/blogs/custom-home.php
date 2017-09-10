@@ -1,5 +1,5 @@
 <!-- aqui mi widget -->
-<div style="margin-top: -40px;">
+<div style="margin-top: -40px;" class="">
   <div class="slider-home">
     <?php
     the_widget('home_slider');

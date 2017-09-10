@@ -39,7 +39,7 @@ if ( $smarket_blog_layout != 'full' ) {
     <?php get_template_part( 'template_parts/part', 'breadcrumb' ); ?>
     <div class="container-wapper">
         <div class="row">
-            <div class="<?php echo esc_attr( implode( ' ', $smarket_main_content_class ) ); ?>">
+            <div class="hidden-sm hidden-xs <?php echo esc_attr( implode( ' ', $smarket_main_content_class ) ); ?>">
                 <!-- Main content -->
 				<?php get_template_part( 'templates/blogs/custom', 'home' ); ?>
                 <!-- ./Main content -->

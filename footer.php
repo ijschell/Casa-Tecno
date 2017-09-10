@@ -58,5 +58,23 @@
           <p>Copyright @<?php echo date('Y')?>. <span>CasaTecno.</span> Todos los derechos reservados.</p>
         </div>
       </footer>
+      <div id="menu-mobile" class="hidden-lg">
+        <?php
+        wp_nav_menu( array(
+            'menu'            => 'primary',
+            'theme_location'  => 'primary',
+            'depth'           => 3,
+            'container'       => '',
+            'container_class' => '',
+            'container_id'    => '',
+            'menu_class'      => 'clone-main-menu smarket-nav main-menu center',
+            'fallback_cb'     => 'Smarket_navwalker::fallback',
+            'walker'          => new Smarket_navwalker(),
+          )
+        );
+        ?>
+      </div>
       <?php smarket_get_footer();?><a href="#" class="backtotop"><i class="fa fa-angle-up" aria-hidden="true"></i></a><?php wp_footer(); ?></body></html>
       <script src="<?php echo get_template_directory_uri() . '/js/custom.js'?>" charset="utf-8"></script>
+</body>
+</html>

@@ -28,10 +28,17 @@ function changeReadMoreBtnBlog(){
 }
 
 function menuCategories(){
-  console.log(jQuery('body').attr('data-url'));
-  console.log(window.location.href);
+  // si esta en home
   if(jQuery('body').attr('data-url') == window.location.href){
     var flag = false;
+
+    // si es dispositivo chico, escondo el menu
+    if(jQuery(window).width() <= 1024){
+      jQuery('.block-nav-categori .block-title').removeClass("active");
+      jQuery('.block-nav-categori .block-title').parent().removeClass("has-open");
+      jQuery('body').removeClass("categori-open");
+    }
+
     jQuery(window).scroll(function(){
       if(jQuery(window).scrollTop() > 133){
 
@@ -77,4 +84,8 @@ function menuCategories(){
 function changeTexts(){
   jQuery('.form-search .input').attr('placeholder', 'Ingrese su búsqueda');
   jQuery('.onnew span').text('Nuevo');
+}
+
+function openMenuMobile(){
+  jQuery('#menu-mobile').toggleClass('active');
 }

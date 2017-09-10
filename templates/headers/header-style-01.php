@@ -100,6 +100,7 @@ if ( $opt_enable_vertical_menu == 1 ) {
 											<a href="#" class="mail"></a>
 											<a href="#" class="phone"></a>
 											<a href="#" class="location"></a>
+                      <a href="#" class="hidden-lg burguer-menu"><span class="icon-bar"><i onclick="openMenuMobile(); return false;" class="fa fa-align-justify" aria-hidden="true"></i></span></a>
 										</div>
 										<?php
 									}?>
