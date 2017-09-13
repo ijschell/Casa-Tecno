@@ -76,7 +76,7 @@
       </div>
       <div class="overlay-modal">
         <div class="modal">
-          asd
+          <?php echo do_shortcode('[contact-form-7 id="264" title="Consulta de producto"]')?>
         </div>
       </div>
 

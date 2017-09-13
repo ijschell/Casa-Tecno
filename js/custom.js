@@ -98,6 +98,7 @@ function consultarProd(){
     var url = jQuery(this).attr('data-url');
     jQuery('.overlay-modal').fadeIn();
     jQuery('body').css('overflow-y', 'hidden');
+    jQuery('.overlay-modal .modal .your-subject input').attr('value', 'Producto: ' + title + ' Url: ' + url);
   })
 
   var over = false;
