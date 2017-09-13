@@ -74,6 +74,12 @@
         );
         ?>
       </div>
+      <div class="overlay-modal">
+        <div class="modal">
+          asd
+        </div>
+      </div>
+
       <?php smarket_get_footer();?><a href="#" class="backtotop"><i class="fa fa-angle-up" aria-hidden="true"></i></a><?php wp_footer(); ?></body></html>
       <script src="<?php echo get_template_directory_uri() . '/js/custom.js'?>" charset="utf-8"></script>
 </body>

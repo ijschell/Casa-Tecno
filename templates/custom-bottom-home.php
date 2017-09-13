@@ -18,7 +18,7 @@
       $the_query = new WP_Query( $args );
       if(count($the_query->posts) > 0){
         foreach ($the_query->posts as $key => $value) {
-          $url = $value->guid;
+          $url = get_permalink($value->ID);
           $prod = wc_get_product($value->ID);
           $image = get_the_post_thumbnail_url($value->ID, 'medium');
           $normal_price = $prod->get_regular_price();

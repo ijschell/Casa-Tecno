@@ -5,6 +5,7 @@ jQuery(document).ready(function(){
   changeReadMoreBtnBlog();
   menuCategories();
   changeTexts();
+  consultarProd();
 });
 
 function addButtonConsultar(){
@@ -88,4 +89,31 @@ function changeTexts(){
 
 function openMenuMobile(){
   jQuery('#menu-mobile').toggleClass('active');
+}
+
+function consultarProd(){
+  jQuery(document).on('click', '.content-consultar a', function(e){
+    e.preventDefault();
+    var title = jQuery(this).attr('data-title');
+    var url = jQuery(this).attr('data-url');
+    jQuery('.overlay-modal').fadeIn();
+    jQuery('body').css('overflow-y', 'hidden');
+  })
+
+  var over = false;
+
+  jQuery(document).on('mouseover', '.overlay-modal .modal', function(){
+    over = true;
+  });
+  jQuery(document).on('mouseleave', '.overlay-modal .modal', function(){
+    over = false;
+  });
+
+  jQuery(document).on('click', '.overlay-modal', function(e){
+    if(over == false){
+      jQuery('.overlay-modal').fadeOut();
+      jQuery('body').css('overflow-y', 'auto');
+    }
+  })
+
 }

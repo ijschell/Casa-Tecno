@@ -79,6 +79,9 @@ if ( post_password_required() ) {
 									?>
 									<img src="<?php echo get_the_post_thumbnail_url($brand->ID);?>" alt="<?php echo $brand->post_title?>">
 								</div>
+								<div class="content-consultar">
+									<a href="#" data-title="<?php echo get_the_title();?>" data-url="<?php echo get_permalink(get_the_ID());?>">Consultar</a>
+								</div>
             </div>
         </div>
     </div><!-- #product-<?php the_ID(); ?> -->
