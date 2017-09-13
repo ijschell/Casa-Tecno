@@ -467,3 +467,8 @@ input[type="text"], input[type="email"], textarea, select, input[type="password"
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+.toolbar-products select{
+  border-radius: 0 !important;
+  padding: 5px;
+  height: 38px;
+}

@@ -27,9 +27,9 @@
     height: 100%;
     overflow-y: scroll;
     width: 450px;
-    background: #fff;
+    background: #454a53;
     z-index: 1000;
-    border-right: solid 1px #ececec;
+    border-right: solid 1px #565656;
     transition: all 0.3s ease;
   }
   #menu-mobile.active{
@@ -37,16 +37,16 @@
   }
   #menu-mobile ul{
     padding: 0;
-    margin: 0;
+    margin: 107px 0 0 0;
   }
   #menu-mobile ul li{
     display: block;
     width: 100%;
   }
   #menu-mobile ul li a{
-    color: #000;
+    color: #fff;
     display: block;
-    border-bottom: solid 1px #ececec;
+    border-bottom: solid 1px #565656;
   }
   #menu-mobile ul li:last-child a{
     border-bottom: none;

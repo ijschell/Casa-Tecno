@@ -30,7 +30,7 @@ function changeReadMoreBtnBlog(){
 
 function menuCategories(){
   // si esta en home
-  if(jQuery('body').attr('data-url') == window.location.href){
+  if(jQuery('body').attr('data-url') == window.location.href && jQuery(window).width() > 576){
     var flag = false;
 
     // si es dispositivo chico, escondo el menu
